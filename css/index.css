@@ -1,0 +1,372 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 18px;
+    line-height: 1.5em;
+    background: #1f1f2c;
+}
+
+/*nav*/
+nav{
+    background:#141421;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 40px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+}
+
+nav a{
+    display: block;
+	color: #558f98;
+	padding: 0.36em 1.5em;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-transition: color 1s, background-color 0.5s;
+}
+
+nav a:hover{
+    color:#77c6d2;
+    background-color:#323941;
+
+}
+
+/*header*/
+header{
+    position: relative;
+    padding: 3em 3em 0 3em;
+    background:#1f1f2c;
+}
+
+header #title{
+    position: relative;
+    justify-content: center;
+}
+header h1{
+    font-size: 3em;
+    color: aliceblue;
+}
+header h3{
+    color: #77c6d2;
+    padding: 1em 15em;
+    font-size: 1.5em;
+}
+
+/*section*/
+section{
+    position: relative;
+}
+section ul{
+    justify-content: center;
+}
+
+section ul li{
+    list-style: none;
+    width: 100%;
+    height: 28em;
+    margin: 4px;
+}
+
+section ul li a{
+    text-decoration:none;
+}
+
+section ul li a div{
+    height: 28em;
+    position: relative;
+    border-left:3px solid #558f98;
+    border-right:3px solid #558f98;
+    border-bottom:3px solid #558f98;
+}
+
+section ul li a h2{
+    color: aliceblue;
+    opacity: 1;
+    font-size: 22px;
+    text-align: center;
+    position: absolute;
+    z-index: 999;
+    padding-top: 0.5em;
+    padding-left: 1em;
+}
+
+#earthquake div{
+    background: url('/images/earthquake-banner\(pexel\).jpg');
+    background-size: cover;
+    background-position-x: 50%;
+    opacity: 0.6;  
+}
+
+#earthquake a:hover div{
+    opacity: 1;
+    border-left:3px solid #77c6d2;
+    border-right:3px solid #77c6d2;
+    border-bottom:3px solid #77c6d2;
+}
+
+#tsunami div{
+    background: url('/images/tsunami.jpg');
+    background-size: cover;
+    background-position-x: 50%;
+    opacity: 0.6;
+}
+
+#tsunami a:hover div{
+    opacity: 1;
+    border-left:3px solid #77c6d2;
+    border-right:3px solid #77c6d2;
+    border-bottom:3px solid #77c6d2;
+}
+
+#volcano div{
+    background: url('/images/volcano-banner.jpg');
+    background-size: cover;
+    background-position-x: 25%;
+    opacity: 0.6;
+}
+
+#volcano a:hover div{
+    opacity: 1;
+    border-left:3px solid #77c6d2;
+    border-right:3px solid #77c6d2;
+    border-bottom:3px solid #77c6d2;
+}
+
+#flood div{
+    background: url('/images/flood.jpg');
+    background-size: cover;
+    background-position-x: 50%;
+    opacity: 0.6;
+}
+
+#flood a:hover div{
+    opacity: 1;
+    border-left:3px solid #77c6d2;
+    border-right:3px solid #77c6d2;
+    border-bottom:3px solid #77c6d2;
+}
+
+#extreme-weather div{
+    background: url('/images/ex-weather-banner.jpg');
+    background-size: cover;
+    background-position-x: 50%;
+    opacity: 0.6;
+}
+
+#extreme-weather a:hover div{
+    opacity: 1;
+    border-left:3px solid #77c6d2;
+    border-right:3px solid #77c6d2;
+    border-bottom:3px solid #77c6d2;
+}
+
+#fire div{
+    background: url('/images/fire.jpg');
+    background-size: cover;
+    background-position-x: 50%;
+    opacity: 0.6;
+}
+
+#fire a:hover div{
+    opacity: 1;
+    border-left:3px solid #77c6d2;
+    border-right:3px solid #77c6d2;
+    border-bottom:3px solid #77c6d2;
+}
+
+/*footer*/
+footer{
+    position: relative;
+    padding-top: 1.5em;
+}
+footer hr{
+    color: #53525f;
+}
+
+footer #footer-left{
+    float: left;
+}
+#footer-left ul{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#footer-left li{
+    list-style: none;
+    padding: 1em 1em;
+}
+
+#footer-left a{
+    text-decoration: none;
+    color: #558f98;
+}
+
+#footer-left a:hover{
+    color: #77c6d2;
+}
+
+footer #footer-right{
+    float: right;
+    padding: 1em 2em;
+}
+
+#footer-right label{
+    color:aliceblue;
+    font-size: 20px;
+    padding: 1em 0 1em 0;
+}
+
+#email{
+    width: 220px;
+    height: 24px;
+    line-height: 20px;
+    font-size: 20px;
+    color: aliceblue;
+    border: 2px solid #558f98;
+    background: #1f1f2c;
+    border-radius: 5px;
+}
+
+#email::placeholder{
+    color:#4f4f5a;
+}
+
+#submit{
+    background: #363544;
+    color: #558f98;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    height:28px;
+    width:80px;
+    float:right;
+    transition: color 0.5s, backgound 0.5s;
+}
+
+#submit:hover{
+    color: #77c6d2;
+    background: #323941;
+}
+
+@media(min-width:900px){
+    nav ul{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    section ul{
+    display: flex;
+    justify-content: center;
+}
+
+    section ul li{
+        width: 16%;
+    }
+
+    #earthquake div{
+        background: url('/images/earthquake-banner\(pexel\).jpg');
+        background-size: cover;
+        background-position-x: 50%;
+        opacity: 0.6;  
+        -webkit-transition: background-position-x 2s; 
+    }
+    
+    #earthquake a:hover div{
+        background-position-x: 100%;
+        opacity: 1;
+        border-left:3px solid #77c6d2;
+        border-right:3px solid #77c6d2;
+        border-bottom:3px solid #77c6d2;
+    }
+    
+    #tsunami div{
+        background: url('/images/tsunami.jpg');
+        background-size: cover;
+        background-position-x: 50%;
+        opacity: 0.6;
+        -webkit-transition: background-position-x 2s; 
+    }
+    
+    #tsunami a:hover div{
+        background-position-x: 100%;
+        opacity: 1;
+        border-left:3px solid #77c6d2;
+        border-right:3px solid #77c6d2;
+        border-bottom:3px solid #77c6d2;
+    }
+    
+    #volcano div{
+        background: url('/images/volcano-banner.jpg');
+        background-size: cover;
+        background-position-x: 30%;
+        opacity: 0.6;
+        -webkit-transition: background-position-x 2s; 
+    }
+    
+    #volcano a:hover div{
+        background-position-x: 50%;
+        opacity: 1;
+        border-left:3px solid #77c6d2;
+        border-right:3px solid #77c6d2;
+        border-bottom:3px solid #77c6d2;
+    }
+    
+    #flood div{
+        background: url('/images/flood.jpg');
+        background-size: cover;
+        background-position-x: 50%;
+        opacity: 0.6;
+        -webkit-transition: background-position-x 2s; 
+    }
+    
+    #flood a:hover div{
+        background-position-x: 100%;
+        opacity: 1;
+        border-left:3px solid #77c6d2;
+        border-right:3px solid #77c6d2;
+        border-bottom:3px solid #77c6d2;
+    }
+    
+    #extreme-weather div{
+        background: url('/images/ex-weather-banner.jpg');
+        background-size: cover;
+        background-position-x: 50%;
+        opacity: 0.6;
+        -webkit-transition: background-position-x 2s; 
+    }
+    
+    #extreme-weather a:hover div{
+        background-position-x: 100%;
+        opacity: 1;
+        border-left:3px solid #77c6d2;
+        border-right:3px solid #77c6d2;
+        border-bottom:3px solid #77c6d2;
+    }
+    
+    #fire div{
+        background: url('/images/fire.jpg');
+        background-size: cover;
+        background-position-x: 50%;
+        opacity: 0.6;
+        -webkit-transition: background-position-x 2s; 
+    }
+    
+    #fire a:hover div{
+        background-position-x: 100%;
+        opacity: 1;
+        border-left:3px solid #77c6d2;
+        border-right:3px solid #77c6d2;
+        border-bottom:3px solid #77c6d2;
+    }
+}

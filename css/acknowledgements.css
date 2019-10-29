@@ -1,0 +1,201 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 18px;
+    line-height: 1.5em;
+    background: url('/images/contact-bg\ copy.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+/*nav*/
+nav{
+    background:#141421;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+}
+
+nav a{
+    display: block;
+	color: #558f98;
+	padding: 0.36em 1.5em;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-transition: color 1s, background-color 0.5s;
+}
+
+nav a:hover{
+    color:#77c6d2;
+    background-color:#323941;
+
+}
+
+#home-link a{
+    color: #935640;
+}
+#home-link a:hover{
+    color:#e38765;
+}
+
+/*header*/
+header{
+    position: relative;
+    padding: 3em 3em 0 3em;
+}
+
+header #title{
+    position: relative;
+    justify-content: center;
+}
+header h1{
+    font-size: 3em;
+    color: aliceblue;
+}
+header h3{
+    color: #77c6d2;
+    padding: 1em 15em;
+    font-size: 1.5em;
+}
+
+main{
+    width: 100%;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bolder;
+    color: aliceblue;
+}
+
+section{
+    margin: 150px 150px 150px 150px;
+}
+
+section h1{
+    font-size: 40px;
+    margin-bottom: 1em;
+}
+
+section h2{
+    font-size: 30px;
+    margin-bottom: 1em;
+}
+
+section h4{
+    width: 100%;
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 1em;
+}
+
+section ul{
+    margin-bottom: 1em;
+}
+
+section li{
+    text-align: left;
+    line-height: 1.5em;
+}
+
+
+
+/*footer*/
+footer{
+    position: relative;
+    padding-top: 1.5em;
+    background: #141421;
+    bottom: 0;
+    width: 100%;
+}
+footer hr{
+    color: #53525f;
+}
+
+footer #footer-left{
+    float: left;
+}
+#footer-left ul{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#footer-left li{
+    list-style: none;
+    padding: 1em 1em;
+}
+
+#footer-left a{
+    text-decoration: none;
+    color: #558f98;
+}
+
+#footer-left a:hover{
+    color: #77c6d2;
+}
+
+footer #footer-right{
+    float: right;
+    padding: 1em 2em;
+}
+
+#footer-right label{
+    color:aliceblue;
+    font-size: 20px;
+    padding: 1em 0 1em 0;
+}
+
+#email{
+    width: 220px;
+    height: 24px;
+    line-height: 20px;
+    font-size: 20px;
+    color: aliceblue;
+    border: 2px solid #558f98;
+    background: #1f1f2c;
+    border-radius: 5px;
+}
+
+#email::placeholder{
+    color:#4f4f5a;
+}
+
+#submit{
+    background: #363544;
+    color: #558f98;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    height:28px;
+    width:80px;
+    float:right;
+    transition: color 0.5s, backgound 0.5s;
+}
+
+#submit:hover{
+    color: #77c6d2;
+    background: #323941;
+}
+
+@media(min-width:900px){
+    nav ul{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
